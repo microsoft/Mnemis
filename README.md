@@ -1,4 +1,4 @@
-# Mnemis
+# Mnemis: Dual-Route Retrieval on Hierarchical Graphs for Long-Term LLM Memory
 <div align="center" style="line-height: 1;">
   <a href="LICENSE" style="margin: 2px;">
     <img alt="License" src="https://img.shields.io/badge/License-MIT-f5de53?color=f5de53" style="display: inline-block; vertical-align: middle;"/>
