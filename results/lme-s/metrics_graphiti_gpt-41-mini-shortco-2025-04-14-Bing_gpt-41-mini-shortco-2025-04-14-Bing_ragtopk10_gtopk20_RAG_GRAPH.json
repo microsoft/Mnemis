@@ -1,0 +1,80 @@
+{
+  "single-session-user": {
+    "correct": 69,
+    "total": 70,
+    "accuracy": 0.9857142857142858
+  },
+  "multi-session": {
+    "correct": 115,
+    "total": 133,
+    "accuracy": 0.8646616541353384
+  },
+  "single-session-preference": {
+    "correct": 30,
+    "total": 30,
+    "accuracy": 1.0
+  },
+  "temporal-reasoning": {
+    "correct": 115,
+    "total": 133,
+    "accuracy": 0.8646616541353384
+  },
+  "knowledge-update": {
+    "correct": 73,
+    "total": 78,
+    "accuracy": 0.9358974358974359
+  },
+  "single-session-assistant": {
+    "correct": 56,
+    "total": 56,
+    "accuracy": 1.0
+  },
+  "total": {
+    "correct": 458,
+    "total": 500,
+    "accuracy": 0.916
+  },
+  "config": {
+    "models": {
+      "graph_model": "gpt-41-mini-shortco-2025-04-14-Bing",
+      "answer_model": "gpt-41-mini-shortco-2025-04-14-Bing",
+      "grader_model": "gpt-41-mini-shortco-2025-04-14-Bing"
+    },
+    "embedder": {
+      "type": "qwen3",
+      "precision": "Precision.FLOAT32"
+    },
+    "retrieval": {
+      "graph_enabled": true,
+      "rag_enabled": true,
+      "merge_method": "RAG_GRAPH",
+      "rag_top_k": 10,
+      "graph_top_k": 20,
+      "graph_node_embedding": "summary_embedding",
+      "graph_global_search_enabled": true
+    },
+    "prompt": {
+      "answer_prompt": "M365",
+      "prompt_turning": true,
+      "organize_rag_content": true,
+      "enrich_rag_context": 0
+    },
+    "advanced": {
+      "rag_use_evidence_messages": false,
+      "bulk_ingestion": true,
+      "enable_semantic_deduplication": false
+    },
+    "experiment": {
+      "name": "lme_s_mnemis_exp_41mini_gs8B",
+      "group_id_prefix": "lme_s_mnemis_exp_41mini",
+      "eval_question_types": [
+        "single-session-assistant",
+        "multi-session",
+        "single-session-preference",
+        "knowledge-update",
+        "temporal-reasoning",
+        "single-session-user"
+      ]
+    }
+  }
+}

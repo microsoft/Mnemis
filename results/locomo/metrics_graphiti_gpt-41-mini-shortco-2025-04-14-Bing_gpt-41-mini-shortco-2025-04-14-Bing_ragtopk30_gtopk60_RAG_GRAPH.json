@@ -1,0 +1,73 @@
+{
+  "total_correct": 1601,
+  "total_questions": 1986,
+  "accuracy": 0.8061430010070494,
+  "num_users": 10,
+  "qa_parallelism": 50,
+  "config": {
+    "models": {
+      "graph_model": "gpt-41-mini-shortco-2025-04-14-Bing",
+      "answer_model": "gpt-41-mini-shortco-2025-04-14-Bing",
+      "grader_model": "gpt-41-mini-shortco-2025-04-14-Bing"
+    },
+    "embedder": {
+      "type": "qwen3",
+      "precision": "Precision.FLOAT32"
+    },
+    "retrieval": {
+      "graph_enabled": true,
+      "rag_enabled": true,
+      "merge_method": "RAG_GRAPH",
+      "rag_top_k": 30,
+      "graph_top_k": 60,
+      "graph_node_embedding": "summary_embedding",
+      "graph_global_search_enabled": true
+    },
+    "prompt": {
+      "answer_prompt": "M365",
+      "prompt_turning": true,
+      "organize_rag_content": true,
+      "enrich_rag_context": 0
+    },
+    "advanced": {
+      "rag_use_evidence_messages": false,
+      "evidence_previous_messages_limit": 5
+    },
+    "experiment": {
+      "name": "locomo_mnemis_exp_41mini_gs8B_orc",
+      "group_id_prefix": "locomo_mnemis_exp_41mini"
+    }
+  },
+  "category_stats": {
+    "2": {
+      "correct": 291,
+      "total": 321
+    },
+    "3": {
+      "correct": 76,
+      "total": 96
+    },
+    "1": {
+      "correct": 262,
+      "total": 282
+    },
+    "4": {
+      "correct": 817,
+      "total": 841
+    },
+    "5": {
+      "correct": 155,
+      "total": 446
+    }
+  },
+  "category_accuracies": {
+    "2": 0.9065420560747663,
+    "3": 0.7916666666666666,
+    "1": 0.9290780141843972,
+    "4": 0.9714625445897741,
+    "5": 0.3475336322869955
+  },
+  "total_correct_exculde_category5": 1446,
+  "total_questions_exculde_category5": 1540,
+  "accuracy_exculde_category5": "0.9390"
+}
