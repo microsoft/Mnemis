@@ -6,6 +6,9 @@
   <a href="https://arxiv.org/abs/2602.15313" style="margin: 2px;">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2602.15313-b31b1b.svg" style="display: inline-block; vertical-align: middle;"/>
   </a>
+  <a href="https://huggingface.co/papers/2602.15313" style="margin: 2px;">
+    <img alt="Hugging Face" src="https://img.shields.io/badge/🤗-HuggingFace-blue" style="display: inline-block; vertical-align: middle;"/>
+  </a>
   <br>
 </div>
 
